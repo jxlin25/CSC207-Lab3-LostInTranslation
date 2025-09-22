@@ -43,7 +43,7 @@ public class LanguageCodeConverter {
             while (iterator.hasNext()) {
                 String line = iterator.next();
                 // TODO Task A: use line to populate the instance variables
-                String[] lan_code = line.split(" ");
+                String[] lan_code = line.split("\t");
                 languageCodeToLanguage.put(lan_code[1].toLowerCase(), lan_code[0]);
                 languageToLanguageCode.put(lan_code[0], lan_code[1].toLowerCase());
 
